@@ -1,0 +1,14 @@
+@mixin title-circle {
+    &::before {
+        content: '';
+        position: absolute;
+        top: -25%;
+        left: 0;
+        display: block;
+        width: 36px;
+        height: 36px;
+        border-radius: 100%;
+        background: $main-color;
+        z-index: -1;
+    }
+}
