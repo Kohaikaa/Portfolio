@@ -1,0 +1,43 @@
+.about {
+    margin-top: 120px;
+
+    &__wrapper {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__img {
+        img {
+            width: 100%;
+        }
+    }
+
+    &__info {
+        width: 572px;
+        margin-left: 68px;
+        padding-top: 6px;
+    }
+
+    &__title {
+        margin-top: 6px;
+    }
+
+    &__subtitle {
+        position: relative;
+        padding-left: 12px;
+        @include title-circle;
+    }
+
+    .divider {
+        margin-top: 0;
+    }
+
+    &__descr {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: $main-text-color;
+    }
+}

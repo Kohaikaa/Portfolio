@@ -1,0 +1,36 @@
+.activities {
+    display: grid;
+    align-items: start;
+    grid-template-columns: repeat(2, 260px);
+    grid-template-rows: repeat(2, minmax(116px, auto));
+    grid-auto-rows: minmax(116px, auto);
+    gap: 20px 50px;
+
+    &__item {
+        display: flex;
+    }
+
+    &__icon {
+        @include title-circle;
+        display: flex;
+        align-items: flex-end;
+        height: 38px;
+        width: 40px;
+        padding: 3px 0 0 15px;
+
+        &::before {
+            top: 1px;
+        }
+    }
+
+    &__text {
+        margin-left: 20px;
+    }
+
+    &__descr {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: $main-text-color;
+    }
+}
