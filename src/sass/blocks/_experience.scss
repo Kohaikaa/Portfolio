@@ -1,3 +1,41 @@
 .experience {
     margin-top: 120px;
+
+    &__subtitle {
+        text-align: center;
+        @include title-circle;
+
+        &::before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(417px, auto));
+    }
+
+    &__column {
+        ul {
+            list-style-type: none;
+        }
+    }
+
+
+
+    &__item {
+        &-head {}
+
+        &-source {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+            color: $main-text-color;
+        }
+    }
 }
