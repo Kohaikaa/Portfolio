@@ -2,7 +2,6 @@
     margin-top: 120px;
 
     &__subtitle {
-        text-align: center;
         @include title-circle;
 
         &::before {
@@ -11,25 +10,88 @@
         }
     }
 
-    &__title {
-        text-align: center;
-    }
-
     &__wrapper {
+        padding: 60px 65px 0 65px;
         display: grid;
-        grid-template-columns: repeat(2, minmax(417px, auto));
+        grid-template-columns: repeat(2, minmax(425px, auto));
+        gap: 136px;
     }
 
     &__column {
         ul {
             list-style-type: none;
+
+            li {
+                position: relative;
+                padding-left: 25px;
+
+                &::after {
+                    content: '';
+                    width: 1px;
+                    height: calc(100% + 17px);
+                    position: absolute;
+                    top: -17px;
+                    left: -25px;
+                    background: $main-text-color;
+                }
+            }
+        }
+
+        &-title {
+            padding-left: 35px;
+            @include title-circle;
+
+            &::before {
+                width: 15px;
+                height: 15px;
+                top: 6px;
+                left: 0px;
+            }
         }
     }
 
 
 
     &__item {
-        &-head {}
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: -49px;
+            top: 64px;
+            width: 49px;
+            height: 1px;
+            background: $main-text-color;
+        }
+
+        &-head {
+            position: relative;
+            padding: 45px 0 0 60px;
+        }
+
+        &-body {
+            margin-top: 12px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+
+        &-icon {
+            left: 0px;
+            top: 46px;
+            @include title-circle;
+            position: absolute;
+
+            svg {
+                position: absolute;
+                top: 14px;
+                left: 17px;
+            }
+        }
+
+        &-title {
+            margin-bottom: 0;
+        }
 
         &-source {
             font-weight: 500;
