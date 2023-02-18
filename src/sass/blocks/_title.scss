@@ -26,4 +26,13 @@
     &_center {
         text-align: center;
     }
+
+    &__subtitle {
+        @include title-circle;
+
+        &::before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
 }
