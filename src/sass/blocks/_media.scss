@@ -135,10 +135,13 @@
 
         &__ratings {
             grid-template-columns: repeat(1, 300px);
-            justify-content: center;
 
             &-line {
                 width: 300px;
+            }
+
+            &-item {
+                grid-template: 55px 14px/200px 45px;
             }
         }
     }
@@ -204,6 +207,13 @@
             padding: 60px 15px 0 15px;
             grid-template-columns: minmax(292px, auto);
             gap: 40px;
+        }
+    }
+
+    .skills {
+        &__items {
+            grid-template-columns: repeat(1, 270px);
+            justify-content: center;
         }
     }
 }
