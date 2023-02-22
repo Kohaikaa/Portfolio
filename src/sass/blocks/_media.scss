@@ -18,7 +18,7 @@
 
     .skills {
         &__items {
-            grid-template-columns: repeat(3, 270px);
+            grid-template-columns: repeat(auto-fit, 270px);
             justify-content: center;
         }
 
@@ -26,6 +26,7 @@
             grid-template-columns: repeat(2, 320px);
             justify-content: center;
             column-gap: 150px;
+            grid-auto-rows: minmax(70px, auto);
 
             &-line {
                 width: 328px;
@@ -82,13 +83,11 @@
 
     .skills {
         &__items {
-            grid-template-columns: repeat(3, 235px);
-            justify-content: center;
+            grid-template-columns: repeat(auto-fit, 235px);
         }
 
         &__ratings {
-            grid-template-columns: repeat(2, 280px);
-            justify-content: center;
+            grid-template-columns: repeat(auto-fit, 280px);
             column-gap: 100px;
 
             &-line {
@@ -128,20 +127,11 @@
             margin: 20px 0 15px 0;
         }
 
-        &__items {
-            grid-template-columns: repeat(2, 235px);
-            justify-content: center;
-        }
-
         &__ratings {
-            grid-template-columns: repeat(1, 300px);
+            grid-template-columns: repeat(auto-fit, 300px);
 
             &-line {
                 width: 300px;
-            }
-
-            &-item {
-                grid-template: 55px 14px/200px 45px;
             }
         }
     }
@@ -212,8 +202,7 @@
 
     .skills {
         &__items {
-            grid-template-columns: repeat(1, 270px);
-            justify-content: center;
+            grid-template-columns: repeat(auto-fit, 270px);
         }
     }
 }

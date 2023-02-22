@@ -168,7 +168,13 @@
     <section class="about" id="about">
         <div class="container">
             <div class="about__wrapper">
-                <div class="about__img"><img src="img/Aleksandra_photo.jpg" alt="Aleksandra"></div>
+                <div class="about__img">
+                    <picture>
+                        <source media="(max-width: 376px)" srcset="img/mini/Aleksandra_photo_mini.jpg 300w">
+                        <source media="(min-width: 377px)" srcset="img/Aleksandra_photo.jpg 400w">
+                        <img src="img/Aleksandra_photo.jpg" alt="Aleksandra">
+                    </picture>
+                </div>
 
                 <div class="about__info">
                     <h2 class="about__subtitle title title_fz16">Про меня</h2>
@@ -565,7 +571,7 @@
             <!-- Skills ratings end -->
         </div>
     </section>
-    <!-- <section class="portfolio" id="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <h2 class="title__section-subtitle title title_fz16 title_center">Портфолио</h2>
             <div class="title title_center">Мои работы</div>
@@ -592,7 +598,7 @@
             </div>
         </div>
     </section>
-    <section class="price" id="price">
+    <!-- <section class="price" id="price">
         <div class="container">
             <h2 class="title__section-subtitle title title_fz16 title_center">Прайс-лист</h2>
             <div class="divider"></div>
