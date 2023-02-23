@@ -143,6 +143,19 @@
         max-width: 540px;
     }
 
+    .experience,
+    .skills,
+    .portfolio,
+    .price,
+    .contacts {
+        margin-top: 40px;
+    }
+
+
+    .divider {
+        margin-top: 15px;
+    }
+
     .title {
 
         &_fz48 {
@@ -161,7 +174,21 @@
         }
     }
 
+    .about {
+        margin-top: 40px;
+    }
+
+    .experience {
+        &__wrapper {
+            padding-top: 40px;
+        }
+    }
+
     .skills {
+        &__items {
+            margin-top: 40px;
+        }
+
         &__title {
             font-size: 24px;
             line-height: 36px;
@@ -170,10 +197,23 @@
 
         &__ratings {
             grid-template-columns: repeat(auto-fit, 480px);
+            margin-top: 40px;
 
             &-line {
                 width: 300px;
             }
+        }
+    }
+
+    .portfolio {
+        &__wrapper {
+            margin-top: 40px;
+        }
+    }
+
+    .price {
+        &__wrapper {
+            margin-top: 20px;
         }
     }
 
@@ -182,7 +222,6 @@
             padding: 0 0 0 35px
         }
     }
-
 }
 
 @media (max-width: 576px) {
@@ -220,7 +259,6 @@
     }
 
     .about {
-        margin-top: 40px;
 
         &__img {
             width: 300px;
@@ -237,7 +275,6 @@
     }
 
     .experience {
-        margin-top: 40px;
 
         &__title {
             font-size: 24px;
@@ -253,8 +290,6 @@
     }
 
     .skills {
-        margin-top: 40px;
-
         &__items {
             grid-template-columns: repeat(auto-fit, 270px);
             margin-top: 20px;
@@ -262,14 +297,13 @@
 
         &__ratings {
             grid-template-columns: repeat(auto-fit, 300px);
-            margin-top: 40px;
         }
     }
 
-    .portfolio,
-    .price,
-    .contacts {
-        margin-top: 40px;
+    .price {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 300px);
+        }
     }
 
     .contacts {
